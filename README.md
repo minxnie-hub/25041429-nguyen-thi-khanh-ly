@@ -8,3 +8,5 @@ Repo đề xuất: `25041429-nguyen-thi-khanh-ly`
 - Đã thêm ảnh cá nhân vào trang chủ và mục Giới thiệu; ảnh chân dung thứ hai đã được xoay lại đúng chiều.
 
 - V5: làm nhẹ decor hero, bỏ mảng nâu lớn / blob vàng, tinh chỉnh font hiển thị tiếng Việt trên card bài tập.
+
+- V7: đổi hero chỉ còn tên, thay đoạn mô tả theo góp ý, tăng độ tương phản nền, thêm nhiều sao decor, căn giữa footer, đổi font heading sang Lora và body Be Vietnam Pro.
