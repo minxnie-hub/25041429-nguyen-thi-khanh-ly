@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap");
+
 :root {
   --brown-950: #2b160f;
   --brown-900: #3f2117;
@@ -880,4 +882,219 @@ html { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; 
   }
   .hero-photo--main { width: min(72%, 200px); }
   .assignment-copy h3 { font-size: 1.42rem; line-height: 1.16; }
+}
+
+
+/* V6 polish: clearer backgrounds, comprehensive font fixes, more star decor */
+body {
+  background:
+    radial-gradient(circle at 14% 7%, rgba(243,212,93,.42), transparent 21rem),
+    radial-gradient(circle at 86% 16%, rgba(140,84,58,.18), transparent 24rem),
+    linear-gradient(180deg, #f3eee7 0%, #eee7de 100%);
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+.brand-mark,
+.hero h1,
+.section-heading h2,
+.about-copy h2,
+.assignment-copy h3,
+.assignment-hero h1,
+.assignment-number span,
+.document-title,
+.document-content h2,
+.document-content h3,
+.card-visual--references span,
+.card-visual--prompt b,
+.card-visual--responsible span,
+.card-visual--creative span,
+.card-visual--research span,
+.missing-panel h1,
+.scaffold-intro > span,
+.scaffold-intro h2,
+.scaffold-section h2,
+.scaffold-image-slot span {
+  font-family: "Merriweather", "Times New Roman", serif !important;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+  text-wrap: balance;
+}
+.hero h1,
+.section-heading h2,
+.about-copy h2,
+.assignment-hero h1,
+.assignment-copy h3,
+.document-title,
+.document-content h2,
+.document-content h3 {
+  letter-spacing: 0 !important;
+}
+.hero h1 { font-size: clamp(4rem, 8.6vw, 7.6rem); line-height: .88; }
+.section-heading h2, .about-copy h2 { font-size: clamp(3rem, 6vw, 5.5rem); }
+.assignment-copy h3 {
+  font-size: clamp(1.34rem, 2vw, 1.82rem) !important;
+  line-height: 1.18 !important;
+  text-wrap: pretty;
+}
+.assignment-hero {
+  min-height: 410px;
+}
+.assignment-hero::before {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,.35), transparent 18rem),
+    linear-gradient(180deg, #fff3a8 0%, #f3dd78 100%);
+}
+.assignment-hero::after {
+  content: "✦   ★   ✦";
+  position: absolute;
+  right: clamp(10px, 4vw, 26px);
+  top: 88px;
+  color: rgba(85, 46, 28, .55);
+  font-size: 1.05rem;
+  letter-spacing: 1.2rem;
+  pointer-events: none;
+}
+.assignments-section {
+  position: relative;
+  padding: 110px 20px 120px;
+  background: linear-gradient(180deg, rgba(255,246,199,.55) 0%, rgba(255,252,244,.18) 100%);
+  border: 2px solid rgba(32,25,19,.08);
+  border-radius: 34px;
+}
+.assignments-section::before,
+.assignments-section::after {
+  position: absolute;
+  pointer-events: none;
+  color: rgba(88, 50, 33, .28);
+  line-height: 1;
+}
+.assignments-section::before {
+  content: "★ ✦ ★ ✦ ★";
+  top: 24px;
+  right: 34px;
+  font-size: 1rem;
+  letter-spacing: .6rem;
+}
+.assignments-section::after {
+  content: "✦ ★ ✦ ★";
+  left: 30px;
+  bottom: 26px;
+  font-size: 1.1rem;
+  letter-spacing: .65rem;
+}
+.assignment-card {
+  box-shadow: 10px 10px 0 rgba(24,19,15,.95);
+}
+.card-visual--references,
+.card-visual--files,
+.card-visual--tools,
+.card-visual--prompt,
+.card-visual--creative,
+.card-visual--responsible {
+  position: relative;
+}
+.card-visual--references::after,
+.card-visual--prompt::after,
+.card-visual--creative::after,
+.card-visual--responsible::after {
+  content: "✦";
+  position: absolute;
+  right: 14px;
+  bottom: 10px;
+  font-size: 1rem;
+  color: rgba(255,255,255,.8);
+}
+.card-visual--references::after { color: rgba(88, 50, 33, .66); }
+.card-visual--prompt::after { color: rgba(252,246,183,.72); }
+.card-visual--creative::after,
+.card-visual--responsible::after { color: rgba(252,246,183,.72); }
+.hero::before {
+  inset: 88px 2% auto auto;
+  width: min(32vw, 320px);
+  height: 410px;
+  background:
+    radial-gradient(circle at 60% 22%, rgba(255,255,255,.22), transparent 24%),
+    linear-gradient(180deg, rgba(255,250,233,.55), rgba(255,250,233,.1)),
+    rgba(123, 64, 38, .14);
+  border: 1.5px dashed rgba(88, 50, 33, .28);
+  border-radius: 40px;
+}
+.profile-stage__bg {
+  top: 118px;
+  right: 54px;
+  width: 240px;
+  height: 300px;
+  background:
+    radial-gradient(circle at 66% 18%, rgba(255,255,255,.2), transparent 22%),
+    linear-gradient(180deg, rgba(255,244,205,.35), rgba(255,244,205,.1)),
+    rgba(115, 62, 38, .1);
+  border: 1.5px dashed rgba(88, 50, 33, .28);
+}
+.hero-facts li {
+  background: rgba(255,255,255,.86);
+  border-color: rgba(32,25,19,.82);
+}
+.about-paper {
+  background:
+    linear-gradient(180deg, rgba(255,253,248,.95), rgba(255,248,237,.95));
+  border: 2px solid rgba(32,25,19,.1);
+  border-radius: 34px;
+  padding: 38px;
+}
+.about-paper::before {
+  content: "★";
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  color: rgba(232,189,50,.85);
+  font-size: 1.15rem;
+}
+.about-paper::after {
+  content: "✦ ✦ ★";
+  position: absolute;
+  right: 28px;
+  bottom: 18px;
+  color: rgba(88, 50, 33, .34);
+  letter-spacing: .45rem;
+}
+.toc-card::after {
+  content: "✦ ★";
+  display: block;
+  margin-top: 16px;
+  color: rgba(252,246,183,.9);
+  letter-spacing: .5rem;
+  text-align: center;
+}
+.document-content {
+  background: rgba(255,253,248,.72);
+  border: 1px solid rgba(32,25,19,.08);
+  border-radius: 28px;
+  padding: 34px 34px 24px;
+}
+.document-content h2 {
+  background: linear-gradient(180deg, #fff3ae 0%, #f3dc6c 100%);
+}
+.site-footer {
+  justify-content: center;
+  text-align: center;
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, Helvetica, sans-serif;
+  background: linear-gradient(90deg, #4d2617, #5d2e1b 50%, #4d2617);
+}
+.site-footer span,
+.site-footer a { flex: 0 1 auto; }
+.back-to-top { background: linear-gradient(180deg, #f8dc70, #e8bd32); }
+
+@media (max-width: 820px) {
+  .assignments-section { padding-inline: 14px; }
+  .hero::before { width: min(58vw, 240px); height: 280px; }
+  .profile-stage__bg { width: 168px; height: 210px; right: 18px; top: 108px; }
+  .document-content { padding: 24px 18px 18px; }
+}
+@media (max-width: 620px) {
+  .assignments-section::before { top: 16px; right: 18px; letter-spacing: .35rem; }
+  .assignments-section::after { left: 20px; bottom: 18px; letter-spacing: .4rem; }
+  .site-footer { padding: 16px; }
 }
