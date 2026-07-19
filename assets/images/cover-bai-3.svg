@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="900" height="520" rx="42" fill="#EEE7FF"/>
+<rect x="100" y="72" width="700" height="376" rx="30" fill="#FFFDF9" stroke="#4F3328" stroke-width="10"/>
+<rect x="132" y="110" width="636" height="72" rx="24" fill="#D7E9F5"/><circle cx="176" cy="146" r="12" fill="#F2C9DA"/><circle cx="212" cy="146" r="12" fill="#FAED9A"/>
+<rect x="145" y="230" width="220" height="118" rx="20" fill="#FFF3C8" stroke="#4F3328" stroke-width="7"/>
+<rect x="390" y="205" width="220" height="143" rx="20" fill="#F2D4C2" stroke="#4F3328" stroke-width="7"/>
+<rect x="635" y="178" width="120" height="170" rx="20" fill="#FAED9A" stroke="#4F3328" stroke-width="7"/>
+<text x="255" y="296" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#4F3328">Cơ bản</text>
+<text x="500" y="286" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#4F3328">Cải tiến</text>
+<text x="695" y="270" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#4F3328">Nâng cao</text>
+<path d="M770 80l7 18 18 7-18 7-7 18-7-18-18-7 18-7z" fill="#F0CB58"/><path d="M105 395l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#C8B9EA"/>
+</svg>
