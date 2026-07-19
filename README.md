@@ -1,12 +1,8 @@
 # Portfolio Nguyễn Thị Khánh Ly
 
-Static website dùng HTML/CSS/JavaScript, có thể deploy trực tiếp bằng GitHub Pages.
+Repo đề xuất: `25041429-nguyen-thi-khanh-ly`
 
-- Đã dựng đúng 6 trang bài tập.
-- Bài 2, 3, 4, 6 đang chứa nội dung từ tệp đã cung cấp.
-- Bài 1 và Bài 5 là khung chờ để bổ sung dữ liệu thật, không tự bịa.
-- Xem `CONTENT-MAP.md` để biết vị trí chèn nội dung và ảnh.
-
-## Deploy GitHub Pages
-
-Đưa toàn bộ nội dung thư mục này lên repository, chọn **Settings → Pages → Deploy from a branch**, branch `main`, thư mục `/root`.
+Đây là source portfolio tĩnh dùng để deploy GitHub Pages.
+- Đã cập nhật đủ 6 bài.
+- Bài 1 và Bài 5 đã được bổ sung nội dung và ảnh minh chứng từ file cập nhật mới.
+- Đã thêm ảnh cá nhân vào trang chủ và mục Giới thiệu; ảnh chân dung thứ hai đã được xoay lại đúng chiều.
