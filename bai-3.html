@@ -1,67 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Thử nghiệm ba cấp độ prompt cho tóm tắt, giải thích khái niệm và tạo câu hỏi ôn tập.">
-  <meta name="theme-color" content="#3f2117">
-  <title>Bài 3 — Viết prompt hiệu quả cho các tác vụ học tập</title>
-  <script>document.documentElement.classList.add('js')</script>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="assets/styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Thử nghiệm ba cấp độ prompt cho tóm tắt, giải thích khái niệm và tạo câu hỏi ôn tập." name="description"/>
+<meta content="#3f2117" name="theme-color"/>
+<title>Bài 3 — Viết prompt hiệu quả cho các tác vụ học tập</title>
+<script>document.documentElement.classList.add('js')</script>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="assets/styles.css" rel="stylesheet"/>
 </head>
-<body class="assignment-page">
+<body class="assignment-page lesson-3">
 <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
-
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="Về trang chủ">
-    <span class="brand-mark">KL</span>
-    <span class="brand-copy"><strong>Khánh Ly</strong><small>Learning portfolio</small></span>
-  </a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Mở menu"><span></span><span></span><span></span></button>
-  <nav id="main-nav" class="main-nav" aria-label="Điều hướng chính">
-    <a  href="index.html#home">Trang chủ</a>
-    <a href="index.html#assignments">Bài tập</a>
-    <a href="index.html#about">Giới thiệu</a>
-    <a href="mailto:4m.xzys3e@gmail.com">Liên hệ</a>
-  </nav>
+<a aria-label="Về trang chủ" class="brand" href="index.html">
+<span class="brand-mark">KL</span>
+<span class="brand-copy"><strong>Khánh Ly</strong><small>Learning portfolio</small></span>
+</a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Mở menu" class="nav-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Điều hướng chính" class="main-nav" id="main-nav">
+<a href="index.html#home">Trang chủ</a>
+<a href="index.html#assignments">Bài tập</a>
+<a href="index.html#about">Giới thiệu</a>
+<a href="mailto:4m.xzys3e@gmail.com">Liên hệ</a>
+</nav>
 </header>
-
-<main id="main-content" class="assignment-main">
-  <section class="assignment-hero section-shell">
-    <div class="assignment-hero__copy reveal">
-      <a class="breadcrumb" href="index.html#assignments"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v10h-6v-6H9v6H3z"/></svg> Portfolio / Bài 03</a>
-      <p class="eyebrow">Prompt engineering</p>
-      <h1>Viết prompt hiệu quả cho các tác vụ học tập</h1>
-      <p>Thử nghiệm ba cấp độ prompt cho tóm tắt, giải thích khái niệm và tạo câu hỏi ôn tập.</p>
-      <a class="button button--download" href="documents/bai-3-viet-prompt-hieu-qua.docx" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg> Tải tệp Word gốc</a>
-    </div>
-    <div class="assignment-number reveal" aria-hidden="true"><span>03</span><small>VNU1001</small></div>
-  </section>
-  <section class="article-shell section-shell">
-    <aside class="article-toc">
-      <div class="toc-card"><p class="toc-title">Mục lục</p><ol><li class="toc-level-2"><a href="#i-tac-vu-1-hay-tom-tat-mot-bai-doc-tai-lieu-hoc-thuat-1">I. TÁC VỤ 1: HÃY TÓM TẮT MỘT BÀI ĐỌC/TÀI LIỆU HỌC THUẬT</a></li><li class="toc-level-3"><a href="#1-prompt-co-ban-2">1. Prompt cơ bản</a></li><li class="toc-level-3"><a href="#2-prompt-cai-tien-3">2. Prompt cải tiến</a></li><li class="toc-level-3"><a href="#3-prompt-nang-cao-4">3. Prompt nâng cao</a></li><li class="toc-level-2"><a href="#ii-tac-vu-2-giai-thich-mot-khai-niem-phuc-tap-5">II. TÁC VỤ 2: GIẢI THÍCH MỘT KHÁI NIỆM PHỨC TẠP</a></li><li class="toc-level-3"><a href="#1-prompt-co-ban-6">1. Prompt cơ bản</a></li><li class="toc-level-3"><a href="#2-prompt-cai-tien-7">2. Prompt cải tiến</a></li><li class="toc-level-3"><a href="#3-prompt-nang-cao-8">3. Prompt nâng cao</a></li><li class="toc-level-2"><a href="#iii-tac-vu-3-tao-bo-cau-hoi-on-tap-9">III. TÁC VỤ 3: TẠO BỘ CÂU HỎI ÔN TẬP</a></li><li class="toc-level-3"><a href="#1-prompt-co-ban-10">1. Prompt cơ bản</a></li><li class="toc-level-3"><a href="#2-prompt-cai-tien-11">2. Prompt cải tiến</a></li><li class="toc-level-3"><a href="#3-prompt-nang-cao-12">3. Prompt nâng cao</a></li><li class="toc-level-2"><a href="#iv-so-sanh-ket-qua-cac-loai-prompt-13">IV. SO SÁNH KẾT QUẢ CÁC LOẠI PROMPT</a></li><li class="toc-level-2"><a href="#v-phan-tich-vi-sao-mot-so-prompt-hieu-qua-hon-14">V. PHÂN TÍCH VÌ SAO MỘT SỐ PROMPT HIỆU QUẢ HƠN</a></li><li class="toc-level-3"><a href="#1-ro-rang-cu-the-15">1. Rõ ràng &amp; Cụ thể</a></li><li class="toc-level-3"><a href="#2-dong-vai-role-prompting-16">2. Đóng vai (Role Prompting)</a></li><li class="toc-level-3"><a href="#3-chia-buoc-chain-of-thought-17">3. Chia bước (Chain-of-Thought)</a></li><li class="toc-level-3"><a href="#4-cung-cap-vi-du-mau-few-shot-18">4. Cung cấp ví dụ mẫu (Few-shot)</a></li><li class="toc-level-3"><a href="#5-tinh-chinh-linh-hoat-19">5. Tinh chỉnh linh hoạt</a></li><li class="toc-level-2"><a href="#vii-ket-luan-20">VII. KẾT LUẬN</a></li></ol><a class="toc-back" href="index.html#assignments">← Tất cả bài tập</a></div>
-    </aside>
-    <article class="document-content"><p class="document-title">BÁO CÁO: THỬ NGHIỆM VÀ PHÂN TÍCH VIẾT PROMPT HIỆU QUẢ</p>
+<main class="assignment-main" id="main-content">
+<section class="assignment-hero section-shell">
+<div class="assignment-hero__copy reveal">
+<a class="breadcrumb" href="index.html#assignments"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-6H9v6H3z"></path></svg> Portfolio / Bài 03</a>
+<p class="eyebrow">Prompt engineering</p>
+<h1>Viết prompt hiệu quả cho các tác vụ học tập</h1>
+<p>Thử nghiệm ba cấp độ prompt cho tóm tắt, giải thích khái niệm và tạo câu hỏi ôn tập.</p>
+<a class="button button--download" download="" href="documents/bai-3-viet-prompt-hieu-qua.docx"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"></path></svg> Tải tệp Word gốc</a>
+</div>
+<div aria-hidden="true" class="assignment-number reveal"><span>03</span><small>VNU1001</small></div>
+</section>
+<section class="article-shell section-shell">
+<aside class="article-toc">
+<div class="toc-card"><p class="toc-title">Mục lục</p><ol><li class="toc-level-2"><a href="#i-tac-vu-1-hay-tom-tat-mot-bai-doc-tai-lieu-hoc-thuat-1">I. TÁC VỤ 1: HÃY TÓM TẮT MỘT BÀI ĐỌC/TÀI LIỆU HỌC THUẬT</a></li><li class="toc-level-3"><a href="#1-prompt-co-ban-2">1. Prompt cơ bản</a></li><li class="toc-level-3"><a href="#2-prompt-cai-tien-3">2. Prompt cải tiến</a></li><li class="toc-level-3"><a href="#3-prompt-nang-cao-4">3. Prompt nâng cao</a></li><li class="toc-level-2"><a href="#ii-tac-vu-2-giai-thich-mot-khai-niem-phuc-tap-5">II. TÁC VỤ 2: GIẢI THÍCH MỘT KHÁI NIỆM PHỨC TẠP</a></li><li class="toc-level-3"><a href="#1-prompt-co-ban-6">1. Prompt cơ bản</a></li><li class="toc-level-3"><a href="#2-prompt-cai-tien-7">2. Prompt cải tiến</a></li><li class="toc-level-3"><a href="#3-prompt-nang-cao-8">3. Prompt nâng cao</a></li><li class="toc-level-2"><a href="#iii-tac-vu-3-tao-bo-cau-hoi-on-tap-9">III. TÁC VỤ 3: TẠO BỘ CÂU HỎI ÔN TẬP</a></li><li class="toc-level-3"><a href="#1-prompt-co-ban-10">1. Prompt cơ bản</a></li><li class="toc-level-3"><a href="#2-prompt-cai-tien-11">2. Prompt cải tiến</a></li><li class="toc-level-3"><a href="#3-prompt-nang-cao-12">3. Prompt nâng cao</a></li><li class="toc-level-2"><a href="#iv-so-sanh-ket-qua-cac-loai-prompt-13">IV. SO SÁNH KẾT QUẢ CÁC LOẠI PROMPT</a></li><li class="toc-level-2"><a href="#v-phan-tich-vi-sao-mot-so-prompt-hieu-qua-hon-14">V. PHÂN TÍCH VÌ SAO MỘT SỐ PROMPT HIỆU QUẢ HƠN</a></li><li class="toc-level-3"><a href="#1-ro-rang-cu-the-15">1. Rõ ràng &amp; Cụ thể</a></li><li class="toc-level-3"><a href="#2-dong-vai-role-prompting-16">2. Đóng vai (Role Prompting)</a></li><li class="toc-level-3"><a href="#3-chia-buoc-chain-of-thought-17">3. Chia bước (Chain-of-Thought)</a></li><li class="toc-level-3"><a href="#4-cung-cap-vi-du-mau-few-shot-18">4. Cung cấp ví dụ mẫu (Few-shot)</a></li><li class="toc-level-3"><a href="#5-tinh-chinh-linh-hoat-19">5. Tinh chỉnh linh hoạt</a></li><li class="toc-level-2"><a href="#vii-ket-luan-20">VII. KẾT LUẬN</a></li></ol><a class="toc-back" href="index.html#assignments">← Tất cả bài tập</a></div>
+</aside>
+<article class="document-content"><p class="document-title">BÁO CÁO: THỬ NGHIỆM VÀ PHÂN TÍCH VIẾT PROMPT HIỆU QUẢ</p>
 <h2 id="i-tac-vu-1-hay-tom-tat-mot-bai-doc-tai-lieu-hoc-thuat-1">I. TÁC VỤ 1: HÃY TÓM TẮT MỘT BÀI ĐỌC/TÀI LIỆU HỌC THUẬT</h2>
 <h3 id="1-prompt-co-ban-2">1. Prompt cơ bản</h3>
-<p>Hãy tóm tắt &quot;Cây cam ngọt của tôi&quot;</p>
+<p>Hãy tóm tắt "Cây cam ngọt của tôi"</p>
 <div class="media-grid">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-01.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-01.png" width="932" height="642" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 1"><span class="media-zoom" aria-hidden="true">↗</span></button>
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-02.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-02.png" width="935" height="390" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 2"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-01.png" type="button"><img alt="Minh chứng bài 3, hình 1" decoding="async" height="642" loading="lazy" src="assets/images/bai-3-01.png" width="932"/><span aria-hidden="true" class="media-zoom">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-02.png" type="button"><img alt="Minh chứng bài 3, hình 2" decoding="async" height="390" loading="lazy" src="assets/images/bai-3-02.png" width="935"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-03.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-03.png" width="925" height="472" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 3"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-03.png" type="button"><img alt="Minh chứng bài 3, hình 3" decoding="async" height="472" loading="lazy" src="assets/images/bai-3-03.png" width="925"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-04.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-04.png" width="917" height="440" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 4"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-04.png" type="button"><img alt="Minh chứng bài 3, hình 4" decoding="async" height="440" loading="lazy" src="assets/images/bai-3-04.png" width="917"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>AI tạo bản tóm tắt ngắn nhưng khá chung chung, thiếu ý chính và chưa có cấu trúc rõ ràng.</p>
 <h3 id="2-prompt-cai-tien-3">2. Prompt cải tiến</h3>
-<blockquote>“Hãy tóm tắt cuốn sách &quot;Cây cam ngọt của tôi&quot; trong khoảng 150 từ. Nêu rõ:</blockquote>
+<blockquote>“Hãy tóm tắt cuốn sách "Cây cam ngọt của tôi" trong khoảng 150 từ. Nêu rõ:</blockquote>
 <ul class="content-list">
 <li>Chủ đề chính</li>
 <li>Các luận điểm quan trọng</li>
@@ -69,7 +68,7 @@
 <li>Viết theo dạng gạch đầu dòng.”</li>
 </ul>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-05.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-05.png" width="965" height="525" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 5"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-05.png" type="button"><img alt="Minh chứng bài 3, hình 5" decoding="async" height="525" loading="lazy" src="assets/images/bai-3-05.png" width="965"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>Bản tóm tắt rõ ràng hơn, có phân chia ý và giúp người đọc dễ hiểu hơn.</p>
@@ -82,12 +81,12 @@
 <li>Viết lại bằng ngôn ngữ đơn giản dành cho sinh viên năm nhất.”</li>
 </ul>
 <div class="media-grid">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-06.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-06.png" width="912" height="337" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 6"><span class="media-zoom" aria-hidden="true">↗</span></button>
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-07.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-07.png" width="927" height="548" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 7"><span class="media-zoom" aria-hidden="true">↗</span></button>
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-08.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-08.png" width="913" height="213" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 8"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-06.png" type="button"><img alt="Minh chứng bài 3, hình 6" decoding="async" height="337" loading="lazy" src="assets/images/bai-3-06.png" width="912"/><span aria-hidden="true" class="media-zoom">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-07.png" type="button"><img alt="Minh chứng bài 3, hình 7" decoding="async" height="548" loading="lazy" src="assets/images/bai-3-07.png" width="927"/><span aria-hidden="true" class="media-zoom">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-08.png" type="button"><img alt="Minh chứng bài 3, hình 8" decoding="async" height="213" loading="lazy" src="assets/images/bai-3-08.png" width="913"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-09.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-09.png" width="921" height="497" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 9"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-09.png" type="button"><img alt="Minh chứng bài 3, hình 9" decoding="async" height="497" loading="lazy" src="assets/images/bai-3-09.png" width="921"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>AI tạo ra bản tóm tắt chi tiết, logic, dễ hiểu và có chiều sâu hơn. Nội dung được tổ chức rõ ràng, phù hợp cho học tập.</p>
@@ -95,7 +94,7 @@
 <h3 id="1-prompt-co-ban-6">1. Prompt cơ bản</h3>
 <blockquote>“Giải thích công nghệ số là gì.”</blockquote>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-10.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-10.png" width="932" height="127" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 10"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-10.png" type="button"><img alt="Minh chứng bài 3, hình 10" decoding="async" height="127" loading="lazy" src="assets/images/bai-3-10.png" width="932"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>AI đưa ra định nghĩa cơ bản nhưng còn khô khan và khó hiểu với người mới học.</p>
@@ -108,11 +107,11 @@
 <li>Sử dụng ngôn ngữ đơn giản.”</li>
 </ul>
 <div class="media-grid">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-11.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-11.png" width="917" height="427" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 11"><span class="media-zoom" aria-hidden="true">↗</span></button>
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-12.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-12.png" width="827" height="630" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 12"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-11.png" type="button"><img alt="Minh chứng bài 3, hình 11" decoding="async" height="427" loading="lazy" src="assets/images/bai-3-11.png" width="917"/><span aria-hidden="true" class="media-zoom">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-12.png" type="button"><img alt="Minh chứng bài 3, hình 12" decoding="async" height="630" loading="lazy" src="assets/images/bai-3-12.png" width="827"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-13.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-13.png" width="828" height="671" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 13"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-13.png" type="button"><img alt="Minh chứng bài 3, hình 13" decoding="async" height="671" loading="lazy" src="assets/images/bai-3-13.png" width="828"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>Nội dung dễ hiểu hơn, có ví dụ minh họa nên người đọc dễ hình dung.</p>
@@ -127,11 +126,11 @@
 </ul>
 <p>Hãy suy luận từng bước trước khi trả lời.”</p>
 <div class="media-grid">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-14.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-14.png" width="672" height="691" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 14"><span class="media-zoom" aria-hidden="true">↗</span></button>
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-15.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-15.png" width="707" height="352" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 15"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-14.png" type="button"><img alt="Minh chứng bài 3, hình 14" decoding="async" height="691" loading="lazy" src="assets/images/bai-3-14.png" width="672"/><span aria-hidden="true" class="media-zoom">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-15.png" type="button"><img alt="Minh chứng bài 3, hình 15" decoding="async" height="352" loading="lazy" src="assets/images/bai-3-15.png" width="707"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-16.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-16.png" width="696" height="692" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 16"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-16.png" type="button"><img alt="Minh chứng bài 3, hình 16" decoding="async" height="692" loading="lazy" src="assets/images/bai-3-16.png" width="696"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>Câu trả lời mạch lạc, có cấu trúc rõ ràng, ví dụ thực tế phong phú và phù hợp với trình độ người học.</p>
@@ -139,11 +138,11 @@
 <h3 id="1-prompt-co-ban-10">1. Prompt cơ bản</h3>
 <blockquote>“Tạo câu hỏi ôn tập về thì quá khứ chưa hoàn thành (l’imparfait) trong tiếng Pháp.”</blockquote>
 <div class="media-grid">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-17.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-17.png" width="847" height="661" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 17"><span class="media-zoom" aria-hidden="true">↗</span></button>
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-18.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-18.png" width="850" height="457" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 18"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-17.png" type="button"><img alt="Minh chứng bài 3, hình 17" decoding="async" height="661" loading="lazy" src="assets/images/bai-3-17.png" width="847"/><span aria-hidden="true" class="media-zoom">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-18.png" type="button"><img alt="Minh chứng bài 3, hình 18" decoding="async" height="457" loading="lazy" src="assets/images/bai-3-18.png" width="850"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-19.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-19.png" width="830" height="238" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 19"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-19.png" type="button"><img alt="Minh chứng bài 3, hình 19" decoding="async" height="238" loading="lazy" src="assets/images/bai-3-19.png" width="830"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>AI tạo câu hỏi mức độ đơn giản và chưa phù hợp với lộ trình cá nhân.</p>
@@ -155,13 +154,13 @@
 <li>5 câu vận dụng thực tế. Kèm đáp án.”</li>
 </ul>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-20.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-20.png" width="835" height="682" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 20"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-20.png" type="button"><img alt="Minh chứng bài 3, hình 20" decoding="async" height="682" loading="lazy" src="assets/images/bai-3-20.png" width="835"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-21.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-21.png" width="712" height="712" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 21"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-21.png" type="button"><img alt="Minh chứng bài 3, hình 21" decoding="async" height="712" loading="lazy" src="assets/images/bai-3-21.png" width="712"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <div class="media-grid media-grid--phones media-grid--single">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-22.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-22.png" width="641" height="802" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 22"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-22.png" type="button"><img alt="Minh chứng bài 3, hình 22" decoding="async" height="802" loading="lazy" src="assets/images/bai-3-22.png" width="641"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>Bộ câu hỏi đầy đủ hơn, có phân loại và phù hợp cho việc học tập.</p>
@@ -174,8 +173,8 @@
 <li>Sắp xếp từ dễ đến khó”</li>
 </ul>
 <div class="media-grid">
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-23.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-23.png" width="1534" height="862" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 23"><span class="media-zoom" aria-hidden="true">↗</span></button>
-<button class="media-button" type="button" data-lightbox="assets/images/bai-3-24.png" aria-label="Mở ảnh minh chứng ở kích thước lớn"><img src="assets/images/bai-3-24.png" width="772" height="623" loading="lazy" decoding="async" alt="Minh chứng bài 3, hình 24"><span class="media-zoom" aria-hidden="true">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-23.png" type="button"><img alt="Minh chứng bài 3, hình 23" decoding="async" height="862" loading="lazy" src="assets/images/bai-3-23.png" width="1534"/><span aria-hidden="true" class="media-zoom">↗</span></button>
+<button aria-label="Mở ảnh minh chứng ở kích thước lớn" class="media-button" data-lightbox="assets/images/bai-3-24.png" type="button"><img alt="Minh chứng bài 3, hình 24" decoding="async" height="623" loading="lazy" src="assets/images/bai-3-24.png" width="772"/><span aria-hidden="true" class="media-zoom">↗</span></button>
 </div>
 <p class="content-label">Kết quả:</p>
 <p>AI tạo bộ câu hỏi chất lượng cao, sát chương trình học, có tính phân hóa và hỗ trợ ôn tập hiệu quả hơn.</p>
@@ -194,10 +193,10 @@
 <p>Thử nghiệm và bổ sung thêm yêu cầu nếu kết quả chưa đạt, tránh dùng các prompt quá ngắn và mơ hồ.</p>
 <h2 id="vii-ket-luan-20">VII. KẾT LUẬN</h2>
 <p>Thông qua thử nghiệm, có thể thấy chất lượng phản hồi của AI phụ thuộc trực tiếp vào cách thiết kế prompt. Việc áp dụng các kỹ thuật viết prompt có cấu trúc, chi tiết và rõ ràng là chìa khóa tối ưu để khai thác tối đa năng lực của AI trong học tập và công việc.</p><div class="article-pager"><a href="bai-2.html">← Bài 2</a><a href="bai-4.html">Bài 4 →</a></div></article>
-  </section>
+</section>
 </main>
-<div class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh minh chứng" hidden><button type="button" class="lightbox-close" aria-label="Đóng ảnh">×</button><img alt="Ảnh minh chứng phóng lớn"></div>
-<button class="back-to-top" type="button" aria-label="Lên đầu trang">↑</button>
-<footer class="site-footer"><span>Nguyễn Thị Khánh Ly · Bài 03</span><a href="index.html">Trang chủ</a></footer>
+<div aria-label="Xem ảnh minh chứng" aria-modal="true" class="lightbox" hidden="" role="dialog"><button aria-label="Đóng ảnh" class="lightbox-close" type="button">×</button><img alt="Ảnh minh chứng phóng lớn"/></div>
+<button aria-label="Lên đầu trang" class="back-to-top" type="button">↑</button>
+<footer class="site-footer"><span class="footer-signature">Khánh Ly</span><a href="#main-content">Lên đầu trang ↑</a></footer>
 <script src="assets/script.js"></script>
 </body></html>

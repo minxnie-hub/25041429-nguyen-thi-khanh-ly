@@ -1,127 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#3f2117">
-  <title>Bài 1 — Thao tác cơ bản với tệp tin và thư mục</title>
-  <script>document.documentElement.classList.add('js')</script>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="assets/styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#3f2117" name="theme-color"/>
+<title>Bài 1 — Thao tác cơ bản với tệp tin và thư mục</title>
+<script>document.documentElement.classList.add('js')</script>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="assets/styles.css" rel="stylesheet"/>
 </head>
-<body class="assignment-page">
+<body class="assignment-page lesson-1">
 <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="Về trang chủ">
-    <span class="brand-mark">KL</span>
-    <span class="brand-copy"><strong>Khánh Ly</strong><small>Learning portfolio</small></span>
-  </a>
-  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Mở menu"><span></span><span></span><span></span></button>
-  <nav id="main-nav" class="main-nav" aria-label="Điều hướng chính">
-    <a href="index.html#home">Trang chủ</a><a href="index.html#assignments">Bài tập</a><a href="index.html#about">Giới thiệu</a><a href="mailto:4m.xzys3e@gmail.com">Liên hệ</a>
-  </nav>
+<a aria-label="Về trang chủ" class="brand" href="index.html">
+<span class="brand-mark">KL</span>
+<span class="brand-copy"><strong>Khánh Ly</strong><small>Learning portfolio</small></span>
+</a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Mở menu" class="nav-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Điều hướng chính" class="main-nav" id="main-nav">
+<a href="index.html#home">Trang chủ</a><a href="index.html#assignments">Bài tập</a><a href="index.html#about">Giới thiệu</a><a href="mailto:4m.xzys3e@gmail.com">Liên hệ</a>
+</nav>
 </header>
-<main id="main-content" class="assignment-main">
-  <section class="assignment-hero section-shell">
-    <div class="assignment-hero__copy reveal">
-      <a class="breadcrumb" href="index.html#assignments"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v10h-6v-6H9v6H3z"/></svg> Portfolio / Bài 01</a>
-      <p class="eyebrow">Kỹ năng số nền tảng</p>
-      <h1>Thao tác cơ bản với tệp tin và thư mục</h1>
-      <p>Bài thực hành ghi lại đầy đủ quá trình tạo, đổi tên, sao chép, di chuyển, xóa và khôi phục tệp tin/thư mục trên Windows.</p>
-    </div>
-    <div class="assignment-number reveal" aria-hidden="true"><span>01</span><small>VNU1001</small></div>
-  </section>
-  <section class="article-shell section-shell">
-    <aside class="article-toc"><div class="toc-card"><p class="toc-title">Mục lục</p><ol><li><a href="#tong-quan">1. Thông tin chung</a></li><li><a href="#cac-buoc">2. Các bước thực hiện</a></li><li><a href="#tong-ket">3. Kết quả và ghi chú</a></li></ol><a class="toc-back" href="index.html#assignments">← Tất cả bài tập</a></div></aside>
-    <article class="document-content">
-      <h1 class="document-title">Thao tác cơ bản với tệp tin và thư mục</h1>
-      <p class="document-meta">Người thực hiện: Nguyễn Thị Khánh Ly</p><p class="document-meta">MSSV: 25041429</p>
-      <section id="tong-quan">
-        <h2>Thông tin chung</h2>
-        <p class="topic-line">Bài thực hành minh họa các thao tác cơ bản trong File Explorer theo đúng thứ tự yêu cầu của đề bài, kèm ảnh chụp màn hình minh chứng cho từng bước.</p>
-      </section>
-      <section id="cac-buoc">
-        <h2>Các bước thực hiện</h2>
-
-        <h3 id="step-1">1. Mở File Explorer</h3>
-        <p>Nhấn tổ hợp phím <strong>Windows + E</strong> hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.</p>
-        <div class="media-grid media-grid--single"><button class="media-button" type="button"><img src="assets/images/bai-1-01.png" alt="Minh chứng bước 1 mở File Explorer"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Minh chứng cho thao tác mở File Explorer.</p>
-
-        <h3 id="step-2">2. Truy cập ổ đĩa / thư mục</h3>
-        <p>Ở cột bên trái, nhấp vào <strong>This PC</strong>, sau đó nhấp đúp vào một ổ đĩa không phải ổ hệ thống (ví dụ: ổ D hoặc E). Nếu chỉ có ổ C, chọn thư mục <strong>Documents</strong>.</p>
-        <div class="media-grid media-grid--single"><button class="media-button" type="button"><img src="assets/images/bai-1-02.png" alt="Minh chứng bước 2 truy cập ổ đĩa hoặc thư mục"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Thao tác chọn vị trí thực hành trong File Explorer.</p>
-
-        <h3 id="step-3">3. Tạo thư mục mới</h3>
-        <p>Nhấp chuột phải vào vùng trống, chọn <strong>New → Folder</strong> và đặt tên thư mục là <strong>ThucHanh_hotensinhvien</strong>.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-03.png" alt="Tạo thư mục mới từ menu chuột phải"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-04.png" alt="Đặt tên cho thư mục thực hành"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Tạo thư mục thực hành và nhập tên thư mục.</p>
-
-        <h3 id="step-4">4. Vào thư mục vừa tạo</h3>
-        <p>Nhấp đúp vào thư mục <strong>ThucHanh_NguyenVanA</strong> để mở thư mục làm việc.</p>
-        <div class="media-grid media-grid--single"><button class="media-button" type="button"><img src="assets/images/bai-1-05.png" alt="Mở thư mục vừa tạo"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Mở thư mục thực hành để tiếp tục các bước tiếp theo.</p>
-
-        <h3 id="step-5">5. Tạo tệp tin văn bản</h3>
-        <p>Nhấp chuột phải vào khoảng trống, chọn <strong>New → Text Document</strong> và đặt tên là <strong>GhiChu.txt</strong>.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-06.png" alt="Tạo tệp tin văn bản mới"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-07.png" alt="Tệp GhiChu.txt sau khi được tạo"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Tạo tệp văn bản GhiChu.txt trong thư mục thực hành.</p>
-
-        <h3 id="step-6">6. Đổi tên tệp tin</h3>
-        <p>Nhấp chuột phải vào tệp <strong>GhiChu.txt</strong>, chọn <strong>Rename</strong> và đổi tên thành <strong>GhiChuQuanTrong.txt</strong>.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-08.png" alt="Mở menu đổi tên tệp"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-09.png" alt="Tệp sau khi đổi tên thành GhiChuQuanTrong.txt"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Đổi tên tệp tin theo yêu cầu.</p>
-
-        <h3 id="step-7">7. Tạo thư mục con</h3>
-        <p>Trong thư mục thực hành, nhấp chuột phải chọn <strong>New → Folder</strong> rồi đặt tên thư mục con là <strong>TaiLieu</strong>.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-10.png" alt="Tạo thư mục con TaiLieu"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-11.png" alt="Thư mục con TaiLieu đã được tạo"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Tạo thư mục con dùng để lưu trữ tài liệu.</p>
-
-        <h3 id="step-8">8. Sao chép tệp tin (Copy &amp; Paste)</h3>
-        <p>Nhấp chuột phải vào tệp <strong>GhiChuQuanTrong.txt</strong> và chọn <strong>Copy</strong> (hoặc nhấn <strong>Ctrl + C</strong>).</p>
-        <div class="media-grid media-grid--single"><button class="media-button" type="button"><img src="assets/images/bai-1-12.png" alt="Sao chép tệp GhiChuQuanTrong"><span class="media-zoom">+</span></button></div>
-        <p>Sau đó mở thư mục <strong>TaiLieu</strong>, nhấp chuột phải và chọn <strong>Paste</strong> (hoặc nhấn <strong>Ctrl + V</strong>) để tạo bản sao của tệp.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-13.png" alt="Dán tệp vào thư mục TaiLieu"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-14.png" alt="Bản sao tệp xuất hiện trong thư mục TaiLieu"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Thao tác sao chép và dán tệp tin vào thư mục TaiLieu.</p>
-
-        <h3 id="step-9">9. Di chuyển tệp tin (Cut &amp; Paste)</h3>
-        <p>Quay lại thư mục <strong>ThucHanh_NguyenVanA</strong> và tạo một tệp mới tên là <strong>DiChuyen.txt</strong>.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-15.png" alt="Tạo tệp DiChuyen.txt"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-16.png" alt="Tệp DiChuyen.txt đã được tạo"><span class="media-zoom">+</span></button></div>
-        <p>Nhấp chuột phải vào tệp <strong>DiChuyen.txt</strong>, chọn <strong>Cut</strong> (hoặc nhấn <strong>Ctrl + X</strong>).</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-17.png" alt="Cắt tệp DiChuyen.txt"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-18.png" alt="Tệp DiChuyen.txt ở trạng thái cắt"><span class="media-zoom">+</span></button></div>
-        <p>Mở thư mục <strong>TaiLieu</strong>, nhấp chuột phải và chọn <strong>Paste</strong> để di chuyển tệp sang vị trí mới.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-19.png" alt="Dán tệp DiChuyen.txt vào thư mục TaiLieu"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-20.png" alt="Tệp DiChuyen.txt đã được di chuyển vào TaiLieu"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Các thao tác tạo, cắt và dán để di chuyển tệp tin.</p>
-
-        <h3 id="step-10">10. Xóa tệp tin</h3>
-        <p>Trong thư mục <strong>TaiLieu</strong>, nhấp chuột phải vào tệp <strong>GhiChuQuanTrong.txt</strong> và chọn <strong>Delete</strong> để đưa tệp vào Thùng rác.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-21.png" alt="Chọn xóa tệp GhiChuQuanTrong"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-22.png" alt="Hộp thoại xác nhận xóa tệp"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Xóa tệp tin theo chế độ thông thường.</p>
-
-        <h3 id="step-11">11. Xóa vĩnh viễn</h3>
-        <p>Chọn tệp <strong>DiChuyen.txt</strong>, nhấn giữ <strong>Shift</strong> và bấm <strong>Delete</strong>. Khi hộp thoại hiện ra, chọn xác nhận để xóa vĩnh viễn mà không qua Thùng rác.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-23.png" alt="Thực hiện thao tác Shift Delete"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-24.png" alt="Hộp thoại xác nhận xóa vĩnh viễn"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Thao tác xóa vĩnh viễn tệp tin.</p>
-
-        <h3 id="step-12">12. Khôi phục từ Thùng rác</h3>
-        <p>Mở <strong>Recycle Bin</strong>, tìm tệp <strong>GhiChuQuanTrong.txt</strong> đã xóa, nhấp chuột phải và chọn <strong>Restore</strong> để khôi phục tệp về vị trí ban đầu.</p>
-        <div class="media-grid"><button class="media-button" type="button"><img src="assets/images/bai-1-25.png" alt="Khôi phục tệp từ Recycle Bin"><span class="media-zoom">+</span></button><button class="media-button" type="button"><img src="assets/images/bai-1-26.png" alt="Tệp sau khi được khôi phục"><span class="media-zoom">+</span></button></div>
-        <p class="figure-caption">Khôi phục tệp tin từ Thùng rác về vị trí ban đầu.</p>
-      </section>
-
-      <section id="tong-ket">
-        <h2>Kết quả và ghi chú</h2>
-        <p>Bài thực hành đã hoàn thành đầy đủ các thao tác cốt lõi: tạo thư mục, tạo và đổi tên tệp tin, sao chép, di chuyển, xóa, xóa vĩnh viễn và khôi phục từ Thùng rác. Các ảnh chụp màn hình được sắp theo đúng tiến trình thực hiện để dễ đối chiếu với rubric của đề bài.</p>
-      </section>
-      <div class="article-pager"><span></span><a href="bai-2.html">Bài 2 →</a></div>
-    </article>
-  </section>
+<main class="assignment-main" id="main-content">
+<section class="assignment-hero section-shell">
+<div class="assignment-hero__copy reveal">
+<a class="breadcrumb" href="index.html#assignments"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-6H9v6H3z"></path></svg> Portfolio / Bài 01</a>
+<p class="eyebrow">Kỹ năng số nền tảng</p>
+<h1>Thao tác cơ bản với tệp tin và thư mục</h1>
+<p>Bài thực hành ghi lại đầy đủ quá trình tạo, đổi tên, sao chép, di chuyển, xóa và khôi phục tệp tin/thư mục trên Windows.</p>
+</div>
+<div aria-hidden="true" class="assignment-number reveal"><span>01</span><small>VNU1001</small></div>
+</section>
+<section class="article-shell section-shell">
+<aside class="article-toc"><div class="toc-card"><p class="toc-title">Mục lục</p><ol><li><a href="#tong-quan">1. Thông tin chung</a></li><li><a href="#cac-buoc">2. Các bước thực hiện</a></li><li><a href="#tong-ket">3. Kết quả và ghi chú</a></li></ol><a class="toc-back" href="index.html#assignments">← Tất cả bài tập</a></div></aside>
+<article class="document-content">
+<h1 class="document-title">Thao tác cơ bản với tệp tin và thư mục</h1>
+<p class="document-meta">Người thực hiện: Nguyễn Thị Khánh Ly</p><p class="document-meta">MSSV: 25041429</p>
+<section id="tong-quan">
+<h2>Thông tin chung</h2>
+<p class="topic-line">Bài thực hành minh họa các thao tác cơ bản trong File Explorer theo đúng thứ tự yêu cầu của đề bài, kèm ảnh chụp màn hình minh chứng cho từng bước.</p>
+</section>
+<section id="cac-buoc">
+<h2>Các bước thực hiện</h2>
+<h3 id="step-1">1. Mở File Explorer</h3>
+<p>Nhấn tổ hợp phím <strong>Windows + E</strong> hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ.</p>
+<div class="media-grid media-grid--single"><button class="media-button" type="button"><img alt="Minh chứng bước 1 mở File Explorer" src="assets/images/bai-1-01.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Minh chứng cho thao tác mở File Explorer.</p>
+<h3 id="step-2">2. Truy cập ổ đĩa / thư mục</h3>
+<p>Ở cột bên trái, nhấp vào <strong>This PC</strong>, sau đó nhấp đúp vào một ổ đĩa không phải ổ hệ thống (ví dụ: ổ D hoặc E). Nếu chỉ có ổ C, chọn thư mục <strong>Documents</strong>.</p>
+<div class="media-grid media-grid--single"><button class="media-button" type="button"><img alt="Minh chứng bước 2 truy cập ổ đĩa hoặc thư mục" src="assets/images/bai-1-02.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Thao tác chọn vị trí thực hành trong File Explorer.</p>
+<h3 id="step-3">3. Tạo thư mục mới</h3>
+<p>Nhấp chuột phải vào vùng trống, chọn <strong>New → Folder</strong> và đặt tên thư mục là <strong>ThucHanh_hotensinhvien</strong>.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Tạo thư mục mới từ menu chuột phải" src="assets/images/bai-1-03.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Đặt tên cho thư mục thực hành" src="assets/images/bai-1-04.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Tạo thư mục thực hành và nhập tên thư mục.</p>
+<h3 id="step-4">4. Vào thư mục vừa tạo</h3>
+<p>Nhấp đúp vào thư mục <strong>ThucHanh_NguyenVanA</strong> để mở thư mục làm việc.</p>
+<div class="media-grid media-grid--single"><button class="media-button" type="button"><img alt="Mở thư mục vừa tạo" src="assets/images/bai-1-05.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Mở thư mục thực hành để tiếp tục các bước tiếp theo.</p>
+<h3 id="step-5">5. Tạo tệp tin văn bản</h3>
+<p>Nhấp chuột phải vào khoảng trống, chọn <strong>New → Text Document</strong> và đặt tên là <strong>GhiChu.txt</strong>.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Tạo tệp tin văn bản mới" src="assets/images/bai-1-06.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Tệp GhiChu.txt sau khi được tạo" src="assets/images/bai-1-07.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Tạo tệp văn bản GhiChu.txt trong thư mục thực hành.</p>
+<h3 id="step-6">6. Đổi tên tệp tin</h3>
+<p>Nhấp chuột phải vào tệp <strong>GhiChu.txt</strong>, chọn <strong>Rename</strong> và đổi tên thành <strong>GhiChuQuanTrong.txt</strong>.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Mở menu đổi tên tệp" src="assets/images/bai-1-08.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Tệp sau khi đổi tên thành GhiChuQuanTrong.txt" src="assets/images/bai-1-09.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Đổi tên tệp tin theo yêu cầu.</p>
+<h3 id="step-7">7. Tạo thư mục con</h3>
+<p>Trong thư mục thực hành, nhấp chuột phải chọn <strong>New → Folder</strong> rồi đặt tên thư mục con là <strong>TaiLieu</strong>.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Tạo thư mục con TaiLieu" src="assets/images/bai-1-10.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Thư mục con TaiLieu đã được tạo" src="assets/images/bai-1-11.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Tạo thư mục con dùng để lưu trữ tài liệu.</p>
+<h3 id="step-8">8. Sao chép tệp tin (Copy &amp; Paste)</h3>
+<p>Nhấp chuột phải vào tệp <strong>GhiChuQuanTrong.txt</strong> và chọn <strong>Copy</strong> (hoặc nhấn <strong>Ctrl + C</strong>).</p>
+<div class="media-grid media-grid--single"><button class="media-button" type="button"><img alt="Sao chép tệp GhiChuQuanTrong" src="assets/images/bai-1-12.png"/><span class="media-zoom">+</span></button></div>
+<p>Sau đó mở thư mục <strong>TaiLieu</strong>, nhấp chuột phải và chọn <strong>Paste</strong> (hoặc nhấn <strong>Ctrl + V</strong>) để tạo bản sao của tệp.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Dán tệp vào thư mục TaiLieu" src="assets/images/bai-1-13.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Bản sao tệp xuất hiện trong thư mục TaiLieu" src="assets/images/bai-1-14.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Thao tác sao chép và dán tệp tin vào thư mục TaiLieu.</p>
+<h3 id="step-9">9. Di chuyển tệp tin (Cut &amp; Paste)</h3>
+<p>Quay lại thư mục <strong>ThucHanh_NguyenVanA</strong> và tạo một tệp mới tên là <strong>DiChuyen.txt</strong>.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Tạo tệp DiChuyen.txt" src="assets/images/bai-1-15.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Tệp DiChuyen.txt đã được tạo" src="assets/images/bai-1-16.png"/><span class="media-zoom">+</span></button></div>
+<p>Nhấp chuột phải vào tệp <strong>DiChuyen.txt</strong>, chọn <strong>Cut</strong> (hoặc nhấn <strong>Ctrl + X</strong>).</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Cắt tệp DiChuyen.txt" src="assets/images/bai-1-17.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Tệp DiChuyen.txt ở trạng thái cắt" src="assets/images/bai-1-18.png"/><span class="media-zoom">+</span></button></div>
+<p>Mở thư mục <strong>TaiLieu</strong>, nhấp chuột phải và chọn <strong>Paste</strong> để di chuyển tệp sang vị trí mới.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Dán tệp DiChuyen.txt vào thư mục TaiLieu" src="assets/images/bai-1-19.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Tệp DiChuyen.txt đã được di chuyển vào TaiLieu" src="assets/images/bai-1-20.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Các thao tác tạo, cắt và dán để di chuyển tệp tin.</p>
+<h3 id="step-10">10. Xóa tệp tin</h3>
+<p>Trong thư mục <strong>TaiLieu</strong>, nhấp chuột phải vào tệp <strong>GhiChuQuanTrong.txt</strong> và chọn <strong>Delete</strong> để đưa tệp vào Thùng rác.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Chọn xóa tệp GhiChuQuanTrong" src="assets/images/bai-1-21.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Hộp thoại xác nhận xóa tệp" src="assets/images/bai-1-22.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Xóa tệp tin theo chế độ thông thường.</p>
+<h3 id="step-11">11. Xóa vĩnh viễn</h3>
+<p>Chọn tệp <strong>DiChuyen.txt</strong>, nhấn giữ <strong>Shift</strong> và bấm <strong>Delete</strong>. Khi hộp thoại hiện ra, chọn xác nhận để xóa vĩnh viễn mà không qua Thùng rác.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Thực hiện thao tác Shift Delete" src="assets/images/bai-1-23.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Hộp thoại xác nhận xóa vĩnh viễn" src="assets/images/bai-1-24.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Thao tác xóa vĩnh viễn tệp tin.</p>
+<h3 id="step-12">12. Khôi phục từ Thùng rác</h3>
+<p>Mở <strong>Recycle Bin</strong>, tìm tệp <strong>GhiChuQuanTrong.txt</strong> đã xóa, nhấp chuột phải và chọn <strong>Restore</strong> để khôi phục tệp về vị trí ban đầu.</p>
+<div class="media-grid"><button class="media-button" type="button"><img alt="Khôi phục tệp từ Recycle Bin" src="assets/images/bai-1-25.png"/><span class="media-zoom">+</span></button><button class="media-button" type="button"><img alt="Tệp sau khi được khôi phục" src="assets/images/bai-1-26.png"/><span class="media-zoom">+</span></button></div>
+<p class="figure-caption">Khôi phục tệp tin từ Thùng rác về vị trí ban đầu.</p>
+</section>
+<section id="tong-ket">
+<h2>Kết quả và ghi chú</h2>
+<p>Bài thực hành đã hoàn thành đầy đủ các thao tác cốt lõi: tạo thư mục, tạo và đổi tên tệp tin, sao chép, di chuyển, xóa, xóa vĩnh viễn và khôi phục từ Thùng rác. Các ảnh chụp màn hình được sắp theo đúng tiến trình thực hiện để dễ đối chiếu với rubric của đề bài.</p>
+</section>
+<div class="article-pager"><span></span><a href="bai-2.html">Bài 2 →</a></div>
+</article>
+</section>
 </main>
-<div class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh minh chứng" hidden><button type="button" class="lightbox-close" aria-label="Đóng ảnh">×</button><img alt="Ảnh minh chứng phóng lớn"></div>
-<button class="back-to-top" type="button" aria-label="Lên đầu trang">↑</button>
-<footer class="site-footer"><span>Nguyễn Thị Khánh Ly · Bài 01</span><a href="index.html">Trang chủ</a></footer>
+<div aria-label="Xem ảnh minh chứng" aria-modal="true" class="lightbox" hidden="" role="dialog"><button aria-label="Đóng ảnh" class="lightbox-close" type="button">×</button><img alt="Ảnh minh chứng phóng lớn"/></div>
+<button aria-label="Lên đầu trang" class="back-to-top" type="button">↑</button>
+<footer class="site-footer"><span class="footer-signature">Khánh Ly</span><a href="#main-content">Lên đầu trang ↑</a></footer>
 <script src="assets/script.js"></script>
 </body></html>

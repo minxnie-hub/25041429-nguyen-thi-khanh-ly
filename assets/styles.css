@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Lora:wght@500;600;700&family=Merriweather:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&display=swap");
 
 :root {
   --brown-950: #2b160f;
@@ -1217,4 +1217,222 @@ body {
 @media (max-width: 820px) {
   .hero h1 { font-size: clamp(3.2rem, 12vw, 5.2rem); }
   .assignment-copy h3 { font-size: 1.45rem !important; }
+}
+
+
+/* V8 - revision from port.docx.pdf */
+:root {
+  --ink: #2f231d;
+  --line: #5e4639;
+  --brown-950: #4b2a20;
+  --brown-900: #5f3527;
+  --brown-800: #7b4b38;
+  --brown-700: #9b755f;
+  --cream: #f4efe8;
+  --cream-2: #fffaf5;
+  --paper: #fffdf9;
+  --butter: #faed9a;
+  --yellow: #f3d76e;
+  --yellow-strong: #dfba48;
+  --pastel-peach: #f2d4c2;
+  --pastel-lavender: #ded6f3;
+  --pastel-mint: #dcefd7;
+  --pastel-pink: #f4d6e5;
+  --pastel-blue: #d7e9f5;
+}
+html { text-rendering: geometricPrecision; }
+body {
+  color: var(--ink);
+  background-color: #f2ece5;
+  background-image: url("images/star-pattern-light.svg"), linear-gradient(180deg,#f5f0ea,#eee7df);
+  background-repeat: repeat, no-repeat;
+  background-size: 180px 150px, cover;
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif !important;
+  font-variant-ligatures: none;
+  font-feature-settings: normal;
+}
+body, p, li, a, span, strong, small, dt, dd, th, td, button {
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+.hero h1,
+.brand-copy strong,
+.footer-signature {
+  font-family: "Cormorant Garamond", "Times New Roman", serif !important;
+}
+.hero h1 { letter-spacing: 0 !important; line-height: .88; }
+.hero h1 em { letter-spacing: 0 !important; }
+.section-heading h2,
+.about-copy h2,
+.assignment-copy h3,
+.assignment-hero h1,
+.document-title,
+.document-content h2,
+.document-content h3,
+.document-content h4,
+.assignment-number span,
+.card-visual--references span {
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif !important;
+  letter-spacing: 0 !important;
+  font-feature-settings: normal !important;
+  font-variant-ligatures: none !important;
+  text-wrap: pretty !important;
+}
+.brand-copy strong { font-size: 1.25rem; font-style: italic; font-weight: 700; }
+.brand-copy small { letter-spacing: .1em; }
+
+/* Clear separation between page background and assignment cards */
+.assignments-section {
+  position: relative;
+  padding: 100px 28px 116px;
+  background-color: rgba(255,250,245,.95) !important;
+  background-image: url("images/star-pattern-light.svg"), linear-gradient(135deg,#fff9f0,#f8eee5) !important;
+  background-size: 180px 150px, cover !important;
+  border: 2px solid rgba(94,70,57,.2) !important;
+  border-radius: 38px;
+  box-shadow: 0 18px 50px rgba(83,54,39,.08);
+}
+.section-heading { align-items: stretch; }
+.section-heading > div,
+.section-heading > p {
+  padding: 28px 30px;
+  border: 1.5px solid rgba(94,70,57,.18);
+  border-radius: 24px;
+}
+.section-heading > div { background: var(--pastel-peach); }
+.section-heading > p { background: #fff7d9; display:flex; align-items:center; }
+.section-heading h2 { font-size: clamp(2.8rem,5.4vw,5rem); line-height: .98; }
+
+/* Concrete cover images + coherent pastel sequence */
+.assignment-card { min-height: 475px; box-shadow: 9px 9px 0 rgba(47,35,29,.92); }
+.assignment-card:nth-child(2), .assignment-card:nth-child(5) { transform: translateY(16px); }
+.assignment-card--1 { background: var(--pastel-peach) !important; color: var(--ink) !important; }
+.assignment-card--2 { background: #faefad !important; }
+.assignment-card--3 { background: var(--pastel-lavender) !important; }
+.assignment-card--4 { background: var(--pastel-mint) !important; }
+.assignment-card--5 { background: var(--pastel-pink) !important; }
+.assignment-card--6 { background: var(--pastel-blue) !important; }
+.assignment-copy h3 { font-size: clamp(1.28rem,1.9vw,1.72rem) !important; line-height: 1.22 !important; }
+.card-visual--cover { background:#fff; }
+.card-visual--cover img { width:100%; height:100%; object-fit:cover; }
+.card-cover--1 img, .card-cover--3 img, .card-cover--4 img, .card-cover--6 img { object-position:center top; }
+.cover-badge {
+  position:absolute; left:12px; bottom:12px; padding:7px 11px;
+  background:rgba(255,253,249,.92); border:1.5px solid var(--ink); border-radius:999px;
+  font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase;
+}
+
+/* About details split into separate lines */
+.about-paper {
+  background-image: url("images/star-pattern-light.svg"), linear-gradient(135deg,#fffaf5,#f7eee5) !important;
+  background-size:180px 150px,cover !important;
+}
+.about-details { margin:24px 0; display:grid; gap:9px; }
+.about-details > div {
+  display:grid; grid-template-columns:minmax(115px,150px) 1fr; gap:18px;
+  padding:12px 15px; border-bottom:1px dashed rgba(94,70,57,.35);
+}
+.about-details dt { font-weight:800; color:var(--brown-800); }
+.about-details dd { margin:0; }
+.about-note { padding:16px 18px; background:rgba(255,255,255,.7); border-radius:16px; }
+
+/* Remove all dark/black content frames */
+.card-visual--prompt {
+  background: linear-gradient(135deg,#f6edff,#e6dcf7) !important;
+  color:var(--ink) !important;
+}
+.card-visual--prompt b { color:var(--brown-900) !important; }
+.card-visual--prompt span { border-color:rgba(94,70,57,.45) !important; }
+.card-visual--prompt span:nth-of-type(1) { background:#fff8e8 !important; color:var(--ink) !important; }
+.card-visual--prompt span:nth-of-type(2) { background:#f2d4c2 !important; color:var(--ink) !important; }
+.card-visual--prompt span:nth-of-type(3) { background:#faed9a !important; color:var(--ink) !important; }
+blockquote {
+  background:linear-gradient(135deg,#f7e3d5,#fff3c8) !important;
+  color:var(--ink) !important;
+  border:1.5px solid rgba(94,70,57,.45) !important;
+  box-shadow:5px 5px 0 rgba(223,186,72,.6) !important;
+}
+
+/* Lesson-specific clean pastel palette */
+.assignment-page { --lesson-accent:#f2d4c2; --lesson-accent-2:#fff7e8; }
+.lesson-1 { --lesson-accent:#f2d4c2; --lesson-accent-2:#fff6ed; }
+.lesson-2 { --lesson-accent:#faed9a; --lesson-accent-2:#fff9d8; }
+.lesson-3 { --lesson-accent:#ded6f3; --lesson-accent-2:#f7f3ff; }
+.lesson-4 { --lesson-accent:#dcefd7; --lesson-accent-2:#f2fbef; }
+.lesson-5 { --lesson-accent:#f4d6e5; --lesson-accent-2:#fff2f8; }
+.lesson-6 { --lesson-accent:#d7e9f5; --lesson-accent-2:#f1f8fc; }
+.assignment-hero::before {
+  background-color:var(--lesson-accent) !important;
+  background-image:url("images/star-pattern-light.svg"),linear-gradient(180deg,var(--lesson-accent),var(--lesson-accent-2)) !important;
+  background-size:180px 150px,cover !important;
+}
+.assignment-number { background:var(--lesson-accent-2) !important; color:var(--brown-900) !important; box-shadow:8px 8px 0 rgba(94,70,57,.4) !important; }
+.document-content {
+  background-color:rgba(255,253,249,.97) !important;
+  background-image:url("images/star-pattern-light.svg") !important;
+  background-size:260px 216px !important;
+}
+.document-content h2 {
+  background:var(--lesson-accent) !important;
+  border:1.5px solid rgba(94,70,57,.35) !important;
+  box-shadow:4px 4px 0 rgba(94,70,57,.22) !important;
+  color:var(--ink) !important;
+}
+.document-meta { margin-bottom:8px !important; }
+.document-meta + h2 { margin-top:34px !important; }
+
+/* Bài 2 title and complete evaluation table */
+.document-title--compact { font-size:clamp(1.55rem,3.3vw,2.5rem) !important; line-height:1.18 !important; }
+.nowrap { white-space:nowrap; }
+.research-table { min-width:980px; }
+.research-table th { background:#faed9a; }
+.research-table td:first-child { text-align:center; font-weight:800; width:58px; }
+.research-table td:nth-child(3) { width:165px; }
+
+/* Masonry / staggered proof images without giant gaps */
+.media-grid--phones {
+  display:block !important;
+  columns:2;
+  column-gap:18px;
+}
+.media-grid--phones .media-button {
+  display:block;
+  width:100%;
+  margin:0 0 18px;
+  break-inside:avoid;
+  page-break-inside:avoid;
+}
+.media-grid--phones .media-button:nth-child(even) { transform:translateY(18px); }
+.media-grid--phones .media-button:hover { transform:translateY(14px); }
+
+/* Dense star pattern on every major background */
+.site-header { background-image:url("images/star-pattern-light.svg"); background-size:220px 184px; }
+.toc-card,
+.site-footer {
+  background-color:var(--brown-900) !important;
+  background-image:url("images/star-pattern-dark.svg"),linear-gradient(90deg,#5a3024,#714331,#5a3024) !important;
+  background-size:150px 120px,cover !important;
+}
+.toc-card { color:#fffaf5; }
+.site-footer {
+  min-height:96px;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:3px;
+  text-align:center;
+}
+.footer-signature { font-size:2rem; font-style:italic; color:#fff5c9; line-height:1; }
+.site-footer a { color:#fff5c9; text-decoration:none; font-size:.82rem; }
+
+@media (max-width:820px) {
+  .section-heading > div,.section-heading > p { padding:22px; }
+  .about-details > div { grid-template-columns:1fr; gap:2px; }
+  .media-grid--phones { columns:1; }
+  .media-grid--phones .media-button:nth-child(even) { transform:none; }
+}
+@media (max-width:620px) {
+  .assignments-section { padding-inline:14px; }
+  .document-title--compact { font-size:1.45rem !important; }
 }
