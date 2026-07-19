@@ -1530,3 +1530,76 @@ body {
 .about-stars span {
   opacity: .72;
 }
+
+
+/* V11: reduce stars further so they never cover text */
+.hero-stars span,
+.about-stars span,
+.hero-decor .spark,
+.hero-decor .ring {
+  opacity: .45 !important;
+}
+/* keep only a few stars in hero/about */
+.hero-stars span:nth-child(n+4),
+.about-stars span:nth-child(n+3),
+.spark--2,
+.spark--3,
+.ring--1,
+.ring--2 {
+  display: none !important;
+}
+.hero-stars span:nth-child(1) { left: 2%; top: 12%; }
+.hero-stars span:nth-child(2) { left: 8%; top: 78%; font-size: .95rem; }
+.hero-stars span:nth-child(3) { right: 6%; top: 12%; left: auto; }
+.about-stars span:nth-child(1) { right: 6%; top: 8%; font-size: 1rem; }
+.about-stars span:nth-child(2) { left: 6%; bottom: 10%; right: auto; font-size: .9rem; }
+
+/* remove star pattern from text-heavy blocks */
+.assignments-section,
+.section-heading > div,
+.section-heading > p,
+.about-paper,
+.assignment-hero::before,
+.document-content,
+.toc-card,
+.site-footer,
+body,
+.site-header {
+  background-image: none !important;
+}
+body {
+  background: linear-gradient(180deg, #f4efe9 0%, #eee7df 100%) !important;
+}
+.site-header {
+  background: rgba(255, 249, 243, 0.92) !important;
+}
+.assignments-section {
+  background: linear-gradient(180deg, #f6e7dd 0%, #fbf4ee 100%) !important;
+}
+.section-heading > div,
+.section-heading > p,
+.about-paper,
+.document-content,
+.toc-card {
+  background: #fffdf9 !important;
+}
+.assignment-hero::before {
+  background: linear-gradient(180deg, #f6ead7 0%, #f2dfbf 100%) !important;
+}
+.site-footer {
+  background: linear-gradient(90deg, #5a3024, #714331, #5a3024) !important;
+}
+/* remove all extra pseudo-star rows */
+.assignments-section::before,
+.assignments-section::after,
+.assignment-hero::after,
+.about-paper::before,
+.about-paper::after,
+.toc-card::after,
+.card-visual--references::after,
+.card-visual--prompt::after,
+.card-visual--creative::after,
+.card-visual--responsible::after {
+  display: none !important;
+  content: none !important;
+}
