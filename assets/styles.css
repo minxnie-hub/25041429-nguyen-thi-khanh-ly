@@ -1477,3 +1477,56 @@ blockquote {
 @media (max-width:620px) {
   .brand-avatar { width:42px; height:42px; flex-basis:42px; }
 }
+
+
+/* V10: white 06-assignment heading card + reduced star density */
+.section-heading > div {
+  background: #fff !important;
+  color: #4f3328 !important;
+  box-shadow: 0 8px 20px rgba(79,51,40,.06);
+}
+.section-heading > div,
+.section-heading > p {
+  border-color: rgba(94,70,57,.16) !important;
+}
+
+/* Keep stars as a light accent instead of a dense repeated texture */
+body {
+  background-size: 340px 284px, cover !important;
+}
+.site-header {
+  background-size: 380px 318px !important;
+}
+.assignments-section,
+.about-paper {
+  background-size: 340px 284px, cover !important;
+}
+.assignment-hero::before {
+  background-size: 340px 284px, cover !important;
+}
+.document-content {
+  background-size: 460px 384px !important;
+}
+.toc-card,
+.site-footer {
+  background-size: 280px 224px, cover !important;
+}
+
+/* Remove the extra rows of decorative stars */
+.assignments-section::before,
+.assignments-section::after,
+.assignment-hero::after,
+.about-paper::before,
+.about-paper::after,
+.toc-card::after {
+  display: none !important;
+  content: none !important;
+}
+.hero-stars span:nth-child(n+5),
+.about-stars span:nth-child(n+5) {
+  display: none !important;
+}
+.hero-stars span,
+.about-stars span {
+  opacity: .72;
+}

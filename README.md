@@ -23,3 +23,5 @@ Repo đề xuất: `25041429-nguyen-thi-khanh-ly`
 - Phủ họa tiết sao cho nền trang, khu bài tập, bài học, mục lục và footer.
 
 - V9: thay logo KL bằng ảnh cá nhân áo trắng, đổi ô mô tả 06 bài sang nền trắng, thay toàn bộ 6 bìa trang chủ bằng ảnh minh họa vector đồng bộ.
+
+- V10: đổi cả hai khung tiêu đề phần 06 bài thực hành sang màu trắng và giảm mật độ sao trên toàn website.
