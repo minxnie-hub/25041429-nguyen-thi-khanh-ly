@@ -44,12 +44,16 @@
       if (lightboxImage) lightboxImage.removeAttribute('src');
       if (lastTrigger) lastTrigger.focus();
     };
-    document.querySelectorAll('[data-lightbox]').forEach((button) => {
+    document.querySelectorAll('.media-button, [data-lightbox]').forEach((button) => {
+      const source = button.querySelector('img');
+      const sourcePath = button.dataset.lightbox || source?.getAttribute('src');
+      if (!sourcePath) return;
+
+      button.setAttribute('aria-label', `Phóng to ${source?.alt || 'ảnh minh chứng'}`);
       button.addEventListener('click', () => {
         lastTrigger = button;
         if (lightboxImage) {
-          lightboxImage.src = button.dataset.lightbox;
-          const source = button.querySelector('img');
+          lightboxImage.src = sourcePath;
           lightboxImage.alt = source?.alt || 'Ảnh minh chứng';
         }
         lightbox.hidden = false;
