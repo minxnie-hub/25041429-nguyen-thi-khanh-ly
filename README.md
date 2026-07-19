@@ -21,3 +21,5 @@ Repo đề xuất: `25041429-nguyen-thi-khanh-ly`
 - Đồng bộ bảng màu pastel, dùng ảnh minh họa thật cho bìa 6 bài.
 - Footer chỉ còn chữ Khánh Ly, căn giữa và thêm nền sao.
 - Phủ họa tiết sao cho nền trang, khu bài tập, bài học, mục lục và footer.
+
+- V9: thay logo KL bằng ảnh cá nhân áo trắng, đổi ô mô tả 06 bài sang nền trắng, thay toàn bộ 6 bìa trang chủ bằng ảnh minh họa vector đồng bộ.
